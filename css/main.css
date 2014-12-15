@@ -12,7 +12,9 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+html,body{
+    overflow: hidden;
+}
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -69,6 +71,8 @@ body {
     width: 90%;
     margin: 0 5%;
 }
+
+
 
 /* ===================
     ALL: Orange Theme
@@ -174,6 +178,26 @@ h1 {font-size: 30px; margin: 20px; text-align: center;}
 	-webkit-perspective: 200px;
 }
 
+
+.criticl{
+	width: 100%;
+	height: 28px;
+	background: #fff url('../img/criticl.svg') no-repeat center center;
+	border: 5px solid #fff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: block;
+	padding: 5px 0;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+
+.criticl:hover{
+	background: #fff url('../img/criticl.svg') no-repeat center center;
+	padding: 10px 0;
+}
 .zuckwobble{
 	-webkit-animation: wobble 2s infinite alternate;
 	position: fixed;
@@ -438,8 +462,27 @@ html, body, .shell{
 	-webkit-transform:rotate(360deg);;
 	}
 }
-
-
+a, a:active, a:visited{
+    outline: none;   
+}
+.criticallogo, .criticallogo:active, .criticallogo:visited{
+	padding: 6px 0;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: rgba(255,255,255,0);
+	outline: none;
+	transition: all .2s ease-out;
+}
+.criticallogo:hover{
+	padding: 12px 0;
+	background: rgba(255,255,255,1);
+}
+.criticallogo img{
+	width: 80px;
+	margin: 0 auto;
+	display: block;
+}
 
 /* ==========================================================================
    Media Queries
